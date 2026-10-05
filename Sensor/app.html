@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DART Sensor Logger</title>
+</head>
+
+<body>
+
+    <h1>DART Sensor Logger</h1>
+
+    <label>
+        Journey:
+        <input id="journey" value="Dalkey to Dublin">
+    </label>
+
+    <br><br>
+
+    <button id="startButton">Start Recording</button>
+    <button id="stopButton" disabled>Stop Recording</button>
+    <button id="downloadButton" disabled>Download CSV</button>
+
+    <h2>Status</h2>
+    <p id="status">Not recording</p>
+
+    <h2>Readings</h2>
+    <p id="count">0</p>
+
+    <h2>Current acceleration</h2>
+    <p>X: <span id="x">-</span></p>
+    <p>Y: <span id="y">-</span></p>
+    <p>Z: <span id="z">-</span></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
